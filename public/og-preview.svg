@@ -3,6 +3,8 @@
   <rect x="0" y="0" width="1200" height="630" fill="url(#bg)"/>
   <rect x="72" y="72" width="1056" height="486" rx="32" fill="#0F172A" fill-opacity="0.94"/>
   <rect x="72" y="72" width="12" height="486" fill="#06B6D4"/>
+  <rect x="884" y="120" width="180" height="180" rx="40" fill="#F8FAFC" fill-opacity="0.96"/>
+  <image href="/favicon.jpg" x="894" y="130" width="160" height="160" preserveAspectRatio="xMidYMid slice"/>
   <text x="126" y="176" fill="#67E8F9" font-family="Georgia, 'Times New Roman', serif" font-size="34" letter-spacing="2">PORTFOLIO EDITION</text>
   <text x="126" y="278" fill="#F8FAFC" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700">
     <tspan x="126" dy="0">Bille Janssen</tspan>
@@ -14,9 +16,9 @@
   </text>
   <rect x="126" y="484" width="280" height="52" rx="26" fill="#06B6D4"/>
   <text x="266" y="517" text-anchor="middle" fill="#082F49" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Valenzuela City, PH</text>
-  <circle cx="1020" cy="160" r="54" fill="#06B6D4" fill-opacity="0.24"/>
-  <circle cx="1080" cy="234" r="28" fill="#67E8F9" fill-opacity="0.32"/>
-  <circle cx="978" cy="252" r="18" fill="#A5F3FC" fill-opacity="0.75"/>
+  <circle cx="1020" cy="356" r="54" fill="#06B6D4" fill-opacity="0.24"/>
+  <circle cx="1080" cy="430" r="28" fill="#67E8F9" fill-opacity="0.32"/>
+  <circle cx="978" cy="448" r="18" fill="#A5F3FC" fill-opacity="0.75"/>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
       <stop stop-color="#FFF8E8"/>
