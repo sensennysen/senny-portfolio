@@ -93,7 +93,6 @@ function App() {
           </aside>
 
           <div className="min-w-0">
-            <Badge className="mb-6 bg-ink text-paper">Portfolio edition</Badge>
             <h1 className="font-serif text-[clamp(2.9rem,15vw,5rem)] leading-[0.95] text-ink sm:text-7xl lg:text-8xl">
               Useful software for teams, tools, and products that need momentum.
             </h1>
