@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+}
+
+:root {
+  font-family: "Aptos", "Segoe UI", sans-serif;
+  color-scheme: light;
+  --paper: oklch(0.965 0.012 235);
+  --ink: oklch(0.19 0.038 245);
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: oklch(0.99 0.009 230);
+  --card-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--paper);
+  --secondary: oklch(0.88 0.075 195);
+  --secondary-foreground: var(--ink);
+  --muted: oklch(0.9 0.016 235);
+  --muted-foreground: oklch(0.45 0.035 245);
+  --accent: oklch(0.72 0.13 205);
+  --accent-foreground: oklch(0.15 0.035 245);
+  --border: oklch(0.78 0.026 230);
+  --input: oklch(0.78 0.026 230);
+  --ring: oklch(0.72 0.13 205);
+}
+
+* { border-color: var(--border); }
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+}
+body {
+  min-width: 320px;
+  margin: 0;
+  overflow-x: hidden;
+  background:
+    linear-gradient(90deg, oklch(0.19 0.038 245 / 0.05) 1px, transparent 1px),
+    linear-gradient(180deg, oklch(0.19 0.038 245 / 0.05) 1px, transparent 1px),
+    radial-gradient(circle at 14% 8%, oklch(0.72 0.13 205 / 0.22), transparent 24rem),
+    radial-gradient(circle at 86% 18%, oklch(0.66 0.1 170 / 0.15), transparent 28rem),
+    var(--paper);
+  background-size: 72px 72px, 72px 72px, auto, auto, auto;
+  color: var(--ink);
+}
+a { color: inherit; }
+img, svg { max-width: 100%; }
+.font-serif { font-family: Georgia, "Iowan Old Style", serif; }
+
