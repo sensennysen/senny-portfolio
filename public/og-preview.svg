@@ -6,16 +6,13 @@
   <rect x="884" y="120" width="180" height="180" rx="40" fill="#F8FAFC" fill-opacity="0.96"/>
   <image href="/favicon.jpg" x="894" y="130" width="160" height="160" preserveAspectRatio="xMidYMid slice"/>
   <text x="126" y="176" fill="#67E8F9" font-family="Georgia, 'Times New Roman', serif" font-size="34" letter-spacing="2">PORTFOLIO EDITION</text>
-  <text x="126" y="278" fill="#F8FAFC" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700">
-    <tspan x="126" dy="0">Bille Janssen</tspan>
-    <tspan x="126" dy="82">Lagarde</tspan>
-  </text>
+  <text x="126" y="306" fill="#F8FAFC" font-family="Georgia, 'Times New Roman', serif" font-size="116" font-weight="700">Bille L.</text>
   <text x="126" y="428" fill="#CBD5E1" font-family="Arial, Helvetica, sans-serif" font-size="32">
     <tspan x="126" dy="0">Full-stack developer building useful software with</tspan>
     <tspan x="126" dy="44">React, Node.js, APIs, and database workflows.</tspan>
   </text>
   <rect x="126" y="484" width="280" height="52" rx="26" fill="#06B6D4"/>
-  <text x="266" y="517" text-anchor="middle" fill="#082F49" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Valenzuela City, PH</text>
+  <text x="266" y="517" text-anchor="middle" fill="#082F49" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Philippines</text>
   <circle cx="1020" cy="356" r="54" fill="#06B6D4" fill-opacity="0.24"/>
   <circle cx="1080" cy="430" r="28" fill="#67E8F9" fill-opacity="0.32"/>
   <circle cx="978" cy="448" r="18" fill="#A5F3FC" fill-opacity="0.75"/>

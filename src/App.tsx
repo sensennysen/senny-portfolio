@@ -1,17 +1,13 @@
 import {
   ArrowUpRight,
-  BookOpen,
   BriefcaseBusiness,
   Code2,
   GitBranch,
-  LayoutDashboard,
   Mail,
   MapPin,
   PenTool,
-  Sparkles,
 } from "lucide-react";
 
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -35,7 +31,7 @@ const projects = [
     title: "mpqcheck PH",
     kind: "Community app",
     copy:
-      "A social queue-checking product with auth, posts, comments, notifications, admin tools, audit logs, and live queue visibility.",
+      "A social queue-checking product with auth, posts, comments, notifications, admin tools, audit logs, and live queue visibility",
     live: "https://mpqcheckph.vercel.app",
     repo: "https://github.com/sensennysen/maimai-queue-check",
   },
@@ -43,7 +39,7 @@ const projects = [
     title: "Ledger - Personal Wallet",
     kind: "Finance tool",
     copy:
-      "A personal finance workspace with charts, reports, credit card management, forecasting, budgets, reminders, and persisted data.",
+      "A personal finance workspace with charts, reports, credit card management, forecasting, budgets, reminders, and persisted data",
     live: "https://ledger-personal.vercel.app",
     repo: "https://github.com/sensennysen/personal_wallet_app",
   },
@@ -72,7 +68,7 @@ function App() {
     <main className="overflow-hidden">
       <header className="px-4 py-4 sm:px-8 sm:py-5 lg:px-12">
         <nav className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 border-b border-ink/15 pb-4">
-          <a className="max-w-[15rem] text-sm font-semibold leading-tight sm:max-w-none sm:text-base" href="#top">Bille Janssen Lagarde</a>
+          <a className="max-w-[15rem] text-sm font-semibold leading-tight sm:max-w-none sm:text-base" href="#top">Bille L.</a>
           <div className="flex items-center gap-1 overflow-x-auto text-sm text-ink/65 sm:overflow-visible">
             <a className="rounded-md px-3 py-2 hover:bg-ink/5" href="#stack">Stack</a>
             <a className="rounded-md px-3 py-2 hover:bg-ink/5" href="#projects">Projects</a>
@@ -84,7 +80,7 @@ function App() {
       <section id="top" className="px-4 pb-14 pt-8 sm:px-8 sm:pb-20 sm:pt-10 lg:px-12 lg:pt-16">
         <div className="mx-auto grid max-w-7xl gap-9 lg:grid-cols-[0.72fr_1.28fr] lg:gap-12">
           <aside className="border-l-4 border-cyan-500 pl-5 sm:pl-6">
-            <p className="max-w-xl font-serif text-2xl leading-tight text-ink sm:text-3xl lg:text-2xl">Full-stack developer based in Valenzuela City, Philippines.</p>
+            <p className="max-w-xl font-serif text-2xl leading-tight text-ink sm:text-3xl lg:text-2xl">Full-stack developer based in the Philippines</p>
             <div className="mt-7 space-y-4 text-sm text-ink/70 sm:mt-8">
               <p className="flex items-center gap-2"><MapPin className="size-4 shrink-0" /> Available for product work</p>
               <p className="flex items-center gap-2"><Code2 className="size-4 shrink-0" /> React, Node.js, data workflows</p>
@@ -97,7 +93,7 @@ function App() {
               Useful software for teams, tools, and products that need momentum.
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-ink/70 sm:mt-7 sm:text-xl sm:leading-9">
-              I build across the stack: interfaces, APIs, authentication, database workflows, deployment, and the practical details that get a product from ticket to release.
+              I build across the stack: interfaces, APIs, authentication, database workflows, deployment, and the practical details that get a product from ticket to release
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Button asChild className="w-full sm:w-auto" size="lg"><a href="mailto:bille.lagarde.personal@gmail.com"><Mail />Email me</a></Button>
@@ -110,9 +106,8 @@ function App() {
       <section id="stack" className="bg-ink px-4 py-14 text-paper sm:px-8 sm:py-16 lg:px-12">
         <div className="mx-auto grid max-w-7xl gap-9 lg:grid-cols-[0.7fr_1.3fr] lg:gap-10">
           <div>
-            <LayoutDashboard className="mb-5 size-9 text-cyan-300" />
-            <h2 className="font-serif text-4xl leading-tight sm:text-5xl">Full-stack capabilities first.</h2>
-            <p className="mt-5 leading-7 text-paper/70">A balanced toolkit for frontend detail, backend reliability, data persistence, and deployment.</p>
+            <h2 className="font-serif text-4xl leading-tight sm:text-5xl">Full-stack capabilities first</h2>
+            <p className="mt-5 leading-7 text-paper/70">A balanced toolkit for frontend detail, backend reliability, data persistence, and deployment</p>
           </div>
           <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 sm:gap-3 xl:grid-cols-4">
             {stack.map((item) => (
@@ -126,10 +121,8 @@ function App() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 flex flex-col justify-between gap-5 border-b border-ink/15 pb-6 sm:flex-row sm:items-end">
             <div className="min-w-0">
-              <Badge className="mb-4 bg-cyan-500 text-slate-950">Selected projects</Badge>
-              <h2 className="font-serif text-4xl leading-tight text-ink sm:text-5xl">Two shipped products, two different problem spaces.</h2>
+              <h2 className="font-serif text-4xl leading-tight text-ink sm:text-5xl">Two shipped products, two different problem spaces</h2>
             </div>
-            <Sparkles className="hidden size-10 text-cyan-500 sm:block" />
           </div>
 
           <div className="grid gap-5 lg:grid-cols-2">
@@ -155,7 +148,6 @@ function App() {
       <section id="story" className="px-4 pb-14 sm:px-8 sm:pb-20 lg:px-12">
         <div className="mx-auto grid max-w-7xl gap-9 border-t border-ink/15 pt-10 sm:pt-12 lg:grid-cols-[0.55fr_1.45fr] lg:gap-10">
           <div>
-            <BookOpen className="mb-5 size-8 text-cyan-500" />
             <h2 className="font-serif text-4xl text-ink sm:text-5xl">Work story</h2>
             <p className="mt-5 leading-7 text-ink/65">Full-stack delivery is the lead. Teaching, coordination, and game development add range.</p>
           </div>
@@ -175,7 +167,10 @@ function App() {
 
       <footer className="bg-cyan-500 px-4 py-9 text-slate-950 sm:px-8 sm:py-10 lg:px-12">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center gap-2 font-semibold"><BriefcaseBusiness className="size-5 shrink-0" />Available for full-stack product work</div>
+          <div className="space-y-2">
+            <div className="flex items-center gap-2 font-semibold"><BriefcaseBusiness className="size-5 shrink-0" />Available for full-stack product work</div>
+            <p className="text-sm text-slate-950/70">&copy; 2026 Bille L. All rights reserved.</p>
+          </div>
           <a className="inline-flex items-center gap-2 break-all font-semibold sm:break-normal" href="mailto:bille.lagarde.personal@gmail.com"><Mail className="size-4 shrink-0" />bille.lagarde.personal@gmail.com</a>
         </div>
       </footer>
@@ -184,4 +179,3 @@ function App() {
 }
 
 export default App;
-
