@@ -10,10 +10,10 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-cyan-700 text-white shadow hover:bg-cyan-800",
+          "bg-accent !text-[#101316] shadow-[0_0_28px_rgba(34,211,238,0.22)] hover:bg-accent/85 hover:!text-[#101316] [&_svg]:!text-[#101316]",
         outline:
-          "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
+          "border border-input bg-card/40 text-foreground shadow-sm hover:bg-foreground/10 hover:text-foreground",
+        ghost: "hover:bg-accent hover:text-paper",
       },
       size: {
         default: "h-10 px-4 py-2",

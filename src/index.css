@@ -25,24 +25,24 @@
 
 :root {
   font-family: "Aptos", "Segoe UI", sans-serif;
-  color-scheme: light;
-  --paper: oklch(0.965 0.012 235);
-  --ink: oklch(0.19 0.038 245);
+  color-scheme: dark;
+  --paper: oklch(0.17 0.012 235);
+  --ink: oklch(0.93 0.019 82);
   --background: var(--paper);
   --foreground: var(--ink);
-  --card: oklch(0.99 0.009 230);
+  --card: oklch(0.22 0.014 235);
   --card-foreground: var(--ink);
-  --primary: var(--ink);
-  --primary-foreground: var(--paper);
-  --secondary: oklch(0.88 0.075 195);
-  --secondary-foreground: var(--ink);
-  --muted: oklch(0.9 0.016 235);
-  --muted-foreground: oklch(0.45 0.035 245);
-  --accent: oklch(0.72 0.13 205);
-  --accent-foreground: oklch(0.15 0.035 245);
-  --border: oklch(0.78 0.026 230);
-  --input: oklch(0.78 0.026 230);
-  --ring: oklch(0.72 0.13 205);
+  --primary: oklch(0.8 0.155 204);
+  --primary-foreground: oklch(0.12 0.018 235);
+  --secondary: oklch(0.8 0.127 82);
+  --secondary-foreground: oklch(0.14 0.013 235);
+  --muted: oklch(0.27 0.013 235);
+  --muted-foreground: oklch(0.72 0.021 82);
+  --accent: oklch(0.8 0.155 204);
+  --accent-foreground: oklch(0.12 0.018 235);
+  --border: oklch(0.93 0.019 82 / 0.14);
+  --input: oklch(0.93 0.019 82 / 0.18);
+  --ring: oklch(0.8 0.155 204);
 }
 
 * { border-color: var(--border); }
@@ -56,10 +56,10 @@ body {
   margin: 0;
   overflow-x: hidden;
   background:
-    linear-gradient(90deg, oklch(0.19 0.038 245 / 0.05) 1px, transparent 1px),
-    linear-gradient(180deg, oklch(0.19 0.038 245 / 0.05) 1px, transparent 1px),
-    radial-gradient(circle at 14% 8%, oklch(0.72 0.13 205 / 0.22), transparent 24rem),
-    radial-gradient(circle at 86% 18%, oklch(0.66 0.1 170 / 0.15), transparent 28rem),
+    linear-gradient(90deg, oklch(0.93 0.019 82 / 0.045) 1px, transparent 1px),
+    linear-gradient(180deg, oklch(0.93 0.019 82 / 0.045) 1px, transparent 1px),
+    radial-gradient(circle at 14% 8%, oklch(0.8 0.155 204 / 0.22), transparent 24rem),
+    radial-gradient(circle at 86% 18%, oklch(0.8 0.127 82 / 0.14), transparent 28rem),
     var(--paper);
   background-size: 72px 72px, 72px 72px, auto, auto, auto;
   color: var(--ink);

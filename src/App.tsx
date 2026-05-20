@@ -79,7 +79,7 @@ function App() {
 
       <section id="top" className="px-4 pb-14 pt-8 sm:px-8 sm:pb-20 sm:pt-10 lg:px-12 lg:pt-16">
         <div className="mx-auto grid max-w-7xl gap-9 lg:grid-cols-[0.72fr_1.28fr] lg:gap-12">
-          <aside className="border-l-4 border-cyan-500 pl-5 sm:pl-6">
+          <aside className="border-l-4 border-accent pl-5 sm:pl-6">
             <p className="max-w-xl font-serif text-2xl leading-tight text-ink sm:text-3xl lg:text-2xl">Full-stack developer based in the Philippines</p>
             <div className="mt-7 space-y-4 text-sm text-ink/70 sm:mt-8">
               <p className="flex items-center gap-2"><MapPin className="size-4 shrink-0" /> Available for product work</p>
@@ -89,8 +89,8 @@ function App() {
           </aside>
 
           <div className="min-w-0">
-            <h1 className="font-serif text-[clamp(2.9rem,15vw,5rem)] leading-[0.95] text-ink sm:text-7xl lg:text-8xl">
-              Useful software for teams, tools, and products that need momentum.
+            <h1 className="font-serif text-[clamp(2.9rem,15vw,5rem)] leading-[0.95] text-ink sm:text-3xl lg:text-4xl">
+              Useful software for teams, tools, and products that need momentum
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-ink/70 sm:mt-7 sm:text-xl sm:leading-9">
               I build across the stack: interfaces, APIs, authentication, database workflows, deployment, and the practical details that get a product from ticket to release
@@ -103,15 +103,15 @@ function App() {
         </div>
       </section>
 
-      <section id="stack" className="bg-ink px-4 py-14 text-paper sm:px-8 sm:py-16 lg:px-12">
+      <section id="stack" className="border-y border-ink/10 bg-card/90 px-4 py-14 text-ink sm:px-8 sm:py-16 lg:px-12">
         <div className="mx-auto grid max-w-7xl gap-9 lg:grid-cols-[0.7fr_1.3fr] lg:gap-10">
           <div>
             <h2 className="font-serif text-4xl leading-tight sm:text-5xl">Full-stack capabilities first</h2>
-            <p className="mt-5 leading-7 text-paper/70">A balanced toolkit for frontend detail, backend reliability, data persistence, and deployment</p>
+            <p className="mt-5 leading-7 text-ink/65">A balanced toolkit for frontend detail, backend reliability, data persistence, and deployment</p>
           </div>
           <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 sm:gap-3 xl:grid-cols-4">
             {stack.map((item) => (
-              <div key={item} className="flex min-h-14 items-center justify-center rounded-md border border-paper/15 bg-paper/[0.06] px-3 text-center text-sm font-semibold sm:min-h-16">{item}</div>
+              <div key={item} className="flex min-h-14 items-center justify-center rounded-md border border-ink/15 bg-ink/[0.04] px-3 text-center text-sm font-semibold sm:min-h-16">{item}</div>
             ))}
           </div>
         </div>
@@ -127,9 +127,9 @@ function App() {
 
           <div className="grid gap-5 lg:grid-cols-2">
             {projects.map((project) => (
-              <Card key={project.title} className="border-ink/15 bg-paper/85">
+              <Card key={project.title} className="border-ink/10 bg-card/85">
                 <CardHeader className="p-5 sm:p-6">
-                  <p className="text-sm font-bold uppercase text-cyan-700">{project.kind}</p>
+                  <p className="text-sm font-bold uppercase text-secondary">{project.kind}</p>
                   <CardTitle className="font-serif text-3xl leading-tight text-ink sm:text-4xl">{project.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="p-5 pt-0 sm:p-6 sm:pt-0">
@@ -153,8 +153,8 @@ function App() {
           </div>
           <div className="grid gap-4">
             {timeline.map((item) => (
-              <article key={item.title} className="grid gap-3 border border-ink/15 bg-white/55 p-4 sm:grid-cols-[9rem_1fr] sm:gap-4 sm:p-5">
-                <p className="font-mono text-sm text-cyan-700">{item.period}</p>
+              <article key={item.title} className="grid gap-3 border border-ink/10 bg-card/75 p-4 sm:grid-cols-[9rem_1fr] sm:gap-4 sm:p-5">
+                <p className="font-mono text-sm text-secondary">{item.period}</p>
                 <div>
                   <h3 className="text-xl font-bold text-ink">{item.title}</h3>
                   <p className="mt-2 leading-7 text-ink/70">{item.body}</p>
@@ -165,11 +165,11 @@ function App() {
         </div>
       </section>
 
-      <footer className="bg-cyan-500 px-4 py-9 text-slate-950 sm:px-8 sm:py-10 lg:px-12">
+      <footer className="border-t border-accent/35 bg-card/85 px-4 py-9 text-ink sm:px-8 sm:py-10 lg:px-12">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
           <div className="space-y-2">
             <div className="flex items-center gap-2 font-semibold"><BriefcaseBusiness className="size-5 shrink-0" />Available for full-stack product work</div>
-            <p className="text-sm text-slate-950/70">&copy; 2026 Bille L. All rights reserved.</p>
+            <p className="text-sm text-ink/60">&copy; 2026 Bille L. All rights reserved.</p>
           </div>
           <a className="inline-flex items-center gap-2 break-all font-semibold sm:break-normal" href="mailto:bille.lagarde.personal@gmail.com"><Mail className="size-4 shrink-0" />bille.lagarde.personal@gmail.com</a>
         </div>
