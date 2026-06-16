@@ -1,6 +1,7 @@
 dist
 node_modules
 .npm-cache
+.vite-cache
 .env
 .env.local
 *.local

@@ -5,15 +5,15 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-semibold transition-[background-color,border-color,color,box-shadow,transform] duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring motion-safe:hover:-translate-y-0.5 motion-safe:active:translate-y-0 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 [&_svg]:transition-transform motion-safe:hover:[&_svg]:translate-x-0.5",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-semibold transition-[background-color,border-color,color,transform] duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring motion-safe:hover:-translate-y-0.5 motion-safe:active:translate-y-0 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 [&_svg]:transition-transform motion-safe:hover:[&_svg]:translate-x-0.5",
   {
     variants: {
       variant: {
         default:
-          "bg-accent !text-[#101316] shadow-[0_0_28px_rgba(34,211,238,0.22)] hover:bg-accent/85 hover:!text-[#101316] [&_svg]:!text-[#101316]",
+          "border border-accent bg-accent !text-[#061009] hover:bg-accent/85 hover:!text-[#061009] [&_svg]:!text-[#061009]",
         outline:
-          "border border-input bg-card/40 text-foreground shadow-sm hover:bg-foreground/10 hover:text-foreground",
-        ghost: "hover:bg-accent hover:text-paper",
+          "border border-accent/35 bg-card/40 text-foreground hover:border-accent hover:bg-accent/10 hover:text-accent",
+        ghost: "hover:bg-accent/10 hover:text-accent",
       },
       size: {
         default: "h-10 px-4 py-2",
