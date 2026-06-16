@@ -59,6 +59,14 @@ Preview the production build:
 npm run preview
 ```
 
+## Portfolio Follow-up Notes
+
+- Add screenshots or GIFs to the maiPaQueueCheck PH and Ledger READMEs.
+- Add GitHub descriptions and topics for both project repos.
+- Add concise security model sections covering auth, RLS, ownership rules, storage, deletion, audit logging, and proxy/header protections where applicable.
+- Confirm and document live demo links in each project README.
+- Add CI and security automation where missing, such as dependency updates, lint/build checks, tests, or security scanning.
+
 ## Notes
 
 This project is still a bit of a messy desk in the best way: useful, personal, changing, and occasionally rearranged after one more idea shows up.

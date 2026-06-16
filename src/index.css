@@ -214,7 +214,8 @@ img, svg { max-width: 100%; }
 }
 
 .project-card,
-.timeline-item {
+.timeline-item,
+.security-proof {
   position: relative;
   overflow: hidden;
   transition-property: border-color, box-shadow, transform;
@@ -263,6 +264,42 @@ img, svg { max-width: 100%; }
 
 .timeline-item:hover::before {
   transform: scaleY(1);
+}
+
+.security-proof {
+  border-radius: 0.5rem;
+  transition-duration: 220ms;
+  transition-timing-function: ease-out;
+}
+
+.security-proof:hover {
+  border-color: oklch(0.8 0.155 204 / 0.42);
+  box-shadow: 0 18px 46px oklch(0.1 0.016 235 / 0.28);
+  transform: translateY(-4px);
+}
+
+.case-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+
+.case-list li {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.case-list li::before {
+  content: "";
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 999px;
+  background: var(--accent);
 }
 
 @media (prefers-reduced-motion: no-preference) {
